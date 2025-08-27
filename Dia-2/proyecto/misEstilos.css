@@ -1,0 +1,47 @@
+body {
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.imagenes {
+    align-content: space-around;
+}
+
+.nombre:hover {
+    border: solid;
+    border-color: blueviolet;
+    border-radius: 1em;
+}
+
+.principal {
+    border: solid;
+    border-color: blueviolet;
+    border-radius: 10px;
+}
+
+#opcional {
+    background-color: lightblue;
+    color: darkblue;
+    padding: 20px;
+    text-align: center;
+}
+
+a[href*=".html"]{
+    color: rgb(1, 90, 255);
+}
+
+a:hover{
+    border: solid;
+    border-width: 3px;
+    border-radius: 5em;
+    border-color: darkmagenta;
+}
+
+.principal::first-line{
+    background-color: rgb(43, 220, 226);
+}
+
+.imagenes img + img {
+  border: 2px solid blueviolet;
+}
