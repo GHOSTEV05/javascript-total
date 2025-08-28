@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+    <head>
+        <title>Variables</title>
+    </head>
+    <body>
+        <p>Ingresa tu nombre</p>
+        <input type="text" id="nombreUsuario">
+        <button onclick="saludarUsuario()">Saludar</button>
+
+        <script>
+            function saludarUsuario() {
+                let miNombre = document.getElementById("nombreUsuario").value;
+                alert("Hola " + miNombre)
+            }
+        </script>
+    </body>
+</html>
