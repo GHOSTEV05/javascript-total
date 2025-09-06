@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Parametros de constructores</title>
+    </head>
+    <body>
+        <script>
+            function Perro(raza, edad) {
+                this.patas = 4;
+                this.raza = raza;
+                this.edad = edad;
+                this.ladrar = function ladrar() {
+                    console.log("Guau");
+                };
+            }
+
+            let Alan = new Perro("Lobo siberiano",5);
+            let Jose = new Perro("Chiguagua", 3);
+
+            
+        </script>
+    </body>
+</html>

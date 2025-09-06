@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Mi primer objeto</title>
+    </head>
+    <body>
+        <script>
+            let perro = {
+                nombre: "Alan",
+                raza: "Lobo siberiano",
+                edad: 4,
+                ladrar() {
+                    console.log("guau");
+                },
+                saludar() {
+                    console.log("Hola, me llamo " + this.nombre)
+                }
+            };
+
+            let perro1 = {
+                nombre: "Jose",
+                raza: "chiguagua",
+                edad: 15,
+                ladrar() {
+                    console.log("guau");
+                },
+                saludar() {
+                    console.log("Hola, me llamo " + this.nombre)
+                }
+            };
+
+            function cumplirAnios() {
+               perro.edad++; 
+            }
+
+            perro["colorOjos"] = "verde";
+        </script>
+    </body>
+</html>

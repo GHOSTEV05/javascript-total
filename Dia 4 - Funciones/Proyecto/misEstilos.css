@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Encabezados */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff9500;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Inputs de números y resultado */
+input[type="number"], #resultado {
+    width: 260px;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: none;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+/* Contenedor de operaciones */
+#operaciones {
+    display: flex;
+    flex-direction: column; /* filas verticales */
+    gap: 10px;
+}
+
+/* Cada fila horizontal de botones */
+.fila {
+    display: flex;
+    justify-content: center; /* centra los botones en la fila */
+    gap: 10px; /* espacio entre botones */
+}
+
+/* Botones básicos */
+button.basico {
+    background-color: #ff9500;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px #222;
+    transition: all 0.2s ease;
+}
+
+button.basico:hover {
+    background-color: #e08900;
+}
+
+button.basico:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #222;
+}
+
+/* Botones avanzados */
+button.avanzado {
+    background-color: #555;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px #222;
+    transition: all 0.2s ease;
+}
+
+button.avanzado:hover {
+    background-color: #666;
+}
+
+button.avanzado:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #222;
+}
+
+/* Botones de redondeo */
+#triple {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#triple button {
+    background-color: #888;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px #222;
+    transition: all 0.2s ease;
+}
+
+#triple button:hover {
+    background-color: #aaa;
+}
+
+#triple button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #222;
+}

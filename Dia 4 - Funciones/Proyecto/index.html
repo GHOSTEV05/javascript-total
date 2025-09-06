@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calculadora básica</title>
+    <link rel="stylesheet" href="misEstilos.css">
+    <script src="funciones.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora básica</h1>
+    <h3>Digite los numeros...</h3>
+    <input type="number" id="primerNumero">
+    <input type="number" id="segundoNumero">
+
+    <br>
+    <div id="operaciones">
+    <!-- Fila de operaciones básicas -->
+    <div class="fila">
+        <button class="basico" onclick="suma()">+</button>
+        <button class="basico" onclick="resta()">-</button>
+        <button class="basico" onclick="multiplicacion()">x</button>
+        <button class="basico" onclick="division()">/</button>
+    </div>
+    <!-- Fila de operaciones avanzadas -->
+    <div class="fila">
+        <button class="avanzado" onclick="potencia()">Potencia</button>
+        <button class="avanzado" onclick="raiz()">Raiz</button>
+        <button class="avanzado" onclick="valorAbsoluto()">Absoluto</button>
+        <button class="avanzado" onclick="randomLimites()">Random</button>
+    </div>
+</div>
+
+    <br>
+
+    <input id="resultado">
+
+
+    <div id="triple">
+        <button onclick="redondear()">Round</button>
+        <button onclick="redondeoFloor()">Floor</button>
+        <button onclick="redondeoCeil()">Ceil</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Juego de preguntas</title>
+    <link rel="stylesheet" href="misEstilos.css">
+</head>
+
+<body onload="comenzarTiempo()">
+    <h1>¿QUÉ TAN FAN ERES DE UFC?</h1>
+
+    <h1 id="tiempoRestante">30</h1>
+
+    <audio id="audioGameOver">
+        <source src="Audios/gameover.mp3" type="audio/mpeg">
+        Sonido no habilitado
+    </audio>
+
+    <h2>Pregunta 1</h2>
+    <p>¿De qué país es Khabib Nurmagomedov?</p>
+    <input type="text" id="respuesta1">
+
+    <h2>Pregunta 2</h2>
+    <p>¿Contra quien peleó por ultima vez Charles Oliveira</p>
+    <input type="text" id="respuesta2">
+
+    <h2>Pregunta 3</h2>
+    <p>¿Qué título ganó por última vez Max Holloway?</p>
+    <input type="text" id="respuesta3">
+
+    <h2>Pregunta 4</h2>
+    <p>¿En qué categoría se retiró Jon Jones?</p>
+    <input type="text" id="respuesta4">
+
+    <h2>Pregunta 5</h2>
+    <p>¿Cuál es la base de Islam Makhachev?</p>
+    <input type="text" id="respuesta5">
+
+    <br><br>
+
+    <button onclick="finalizarJuego()">Finalizar</button>
+    <button onclick="volverAIntentar()">Volver a intentar</button>
+
+    <script>
+        let tiempoTerminado;
+        let intervaloTiempo;
+
+        function comenzarTiempo(){
+            tiempoTerminado = setTimeout(tiempoCumplido,30000);
+            intervaloTiempo = setInterval(ticTac,1000);
+
+            document.getElementById("tiempoRestante").textContent = 30;
+        }
+
+        function ticTac() {
+            let tiempo = document.getElementById("tiempoRestante").textContent;
+
+            document.getElementById("tiempoRestante").textContent = tiempo - 1;
+        }
+
+        function tiempoCumplido(){
+            clearInterval(intervaloTiempo);
+            document.getElementById("tiempoRestante").textContent = 0;
+            document.getElementById("audioGameOver").play();
+            alert("GAME OVER: Intentalo nuevamente...");
+        }
+
+        function finalizarJuego() {
+            clearTimeout(tiempoTerminado);
+            clearInterval(intervaloTiempo);
+
+
+            let r1 = document.getElementById("respuesta1").value;
+            let r2 = document.getElementById("respuesta2").value;
+            let r3 = document.getElementById("respuesta3").value;
+            let r4 = document.getElementById("respuesta4").value;
+            let r5 = document.getElementById("respuesta5").value;
+
+            let fecha = new Date();
+
+            tiempoActual = fecha.toLocaleDateString("es-ES");
+
+            let mensaje = "Fecha: " + tiempoActual +
+                "\nRespuestas obtenidas:" +
+                "\nRespuesta 1: " + r1 +
+                "\nRespuesta 2: " + r2 +
+                "\nRespuesta 3: " + r3 +
+                "\nRespuesta 4: " + r4 +
+                "\nRespuesta 5: " + r5;
+            alert(mensaje);
+        }
+
+        function volverAIntentar() {
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

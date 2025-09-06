@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <head>
+        <title>Cine Bahia</title>
+        <link rel="stylesheet" href="misEstilos.css">
+        <script src="misScripts.js"></script>
+    </head>
+    <body>
+        <h1>CINE BAHIA</h1>
+        <p>Por favor, ingrese su edad...</p>
+        <input type="number" id="edadUsuario">
+        <br>
+
+        <button onclick="recomendarPelicula('comedia')">Comedia</button>
+        <button onclick="recomendarPelicula('crimen')">Crimen</button>
+        <button onclick="recomendarPelicula('drama')">Drama</button>
+        <button onclick="recomendarPelicula('musical')">Musical</button>
+
+        <br>
+
+
+        <h2>Esta es nuestra recomendación:</h2>
+        <h3 id="textoRecomendacion"></h3>
+    </body>
+</html>

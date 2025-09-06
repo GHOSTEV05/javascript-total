@@ -1,0 +1,96 @@
+/* Fuente y fondo general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+/* Formularios */
+h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #34495e;
+}
+
+/* Inputs */
+input[type="text"] {
+    width: 95%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: block;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52,152,219,0.5);
+    outline: none;
+}
+
+/* Botones */
+button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Centrar el contenido */
+body > h3,
+body > input,
+body > button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: left;
+}
+
+/* Contenedor de cada campo */
+.campo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Encabezados centrados */
+.campo h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #34495e;
+    text-align: center;
+}
+
+/* Inputs centrados */
+.campo input[type="text"] {
+    width: 95%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+}
+

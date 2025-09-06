@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Sub-clases</title>
+</head>
+
+<body>
+    <script>
+        class Deportista {
+            constructor(nombre, apellido) {
+                this.nombre = nombre;
+                this.apellido = apellido;
+            }
+        }
+
+        class Futbolista extends Deportista {
+            constructor(nombre, apellido, cantGoles) {
+                super(nombre, apellido);
+                this.cantGoles = cantGoles;
+            }
+        }
+    </script>
+</body>
+
+</html>

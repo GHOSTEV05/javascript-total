@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Etiquetas</title>
+</head>
+
+<body>
+    <script>
+        let altura = 4;
+        let ancho = 3;
+
+        loopExterno:
+        for(let i=1; i<=altura; i++){
+            for(let j=1; j<=ancho; j++){
+                document.write(i + "." + j + "<br>");
+
+                if(i==2 && j==2){
+                    break loopExterno;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

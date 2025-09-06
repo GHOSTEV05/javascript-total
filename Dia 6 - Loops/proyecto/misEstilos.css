@@ -1,0 +1,71 @@
+/* misEstilos.css */
+
+/* Fondo general y tipografía escolar */
+body {
+    background-color: #fdf6e3; /* color crema */
+    font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Título principal */
+h1 {
+    background-color: #ffeb3b; /* amarillo tipo pizarra */
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #fbc02d;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Lista de calificaciones */
+ul#listaCalificaciones {
+    list-style-type: square; /* cuadrados como puntos */
+    padding: 0;
+    margin: 20px auto;
+    max-width: 200px;
+    background-color: #e1f5fe; /* celeste pizarra */
+    border: 2px solid #0288d1;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Cada elemento de la lista */
+ul#listaCalificaciones li {
+    padding: 8px;
+    margin: 4px 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #b3e5fc;
+}
+
+/* Botones */
+button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #0288d1;
+    border-radius: 8px;
+    background-color: #4fc3f7;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #0288d1;
+    transform: scale(1.05);
+}
+
+/* Resultados */
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+/* Mensaje de aplazo en rojo si hay nota menor a 4 */
+#resultadoAplazos {
+    color: #d32f2f;
+}

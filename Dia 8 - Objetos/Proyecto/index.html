@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Registro de empleados</title>
+    <script src="misScripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Registro de empleados</h1>
+
+    <div class="campo">
+        <h3>Legajo: </h3>
+        <input type="text" id="inputLegajo">
+    </div>
+
+    <div class="campo">
+        <h3>Nombre: </h3>
+        <input type="text" id="inputNombre">
+    </div>
+
+    <div class="campo">
+        <h3>Apellido: </h3>
+        <input type="text" id="inputApellido">
+    </div>
+
+    <div class="campo">
+        <h3>Fecha de nacimiento (DD/MM/AAAA): </h3>
+        <input type="text" id="inputFecha">
+    </div>
+    
+    <div class="campo">
+        <h3>Cargo: </h3>
+        <input type="text" id="inputCargo">
+    </div>
+    <br>
+    <button onclick="guardarEmpleado()">Guardar empleado</button>
+    <button onclick="mostrarRegistros()">Mostrar registros</button>
+
+</body>
+
+</html>

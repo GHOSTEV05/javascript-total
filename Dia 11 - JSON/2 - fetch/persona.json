@@ -1,0 +1,13 @@
+{
+    "nombre": "Pablo Perez",
+    "edad": 35,
+    "esEstudiante": false,
+    "direccion": {
+        "calle": "Avenida Brasil",
+        "ciudad": "Cartacho"
+    },
+    "telefonos": [
+        "777-777-777",
+        "333-333-333"
+    ]
+}

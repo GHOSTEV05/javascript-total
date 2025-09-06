@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Reporte escolar</title>
+    <link rel="stylesheet" href="misEstilos.css">
+
+</head>
+
+<body onload="listarCalificaciones()">
+    <h1>Historial de calificaciones</h1>
+    <ul id="listaCalificaciones"></ul>
+    <h3>Promedio: <span id="resultadoPromedio"></span></h3>
+    <button onclick="promedio()">Promedio</button>
+    
+    <h3>Nota más alta: <span id="resultadoAlta"></span></h3>
+    <button onclick="notaMasAlta()">Nota mas alta</button>
+
+    <h3>¿Existen aplazos? <span id="resultadoAplazos"></span></h3>
+    <button onclick="aplazos()">Aplazos</button>
+
+    <script src="misScripts.js"></script>
+</body>
+
+</html>
