@@ -1,0 +1,68 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(65, 165, 193);
+}
+
+/* Input y botón */
+#inputBuscar {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#botonBuscar {
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Lista de resultados */
+#resultadoBusqueda {
+    list-style-type: none; /* quitar los bullets */
+    padding: 0;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+/* Cada item de la lista */
+#resultadoBusqueda li {
+    position: relative; /* para posicionar la sinopsis */
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: default;
+    transition: background-color 0.2s;
+}
+
+#resultadoBusqueda li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Sinopsis */
+#resultadoBusqueda li p {
+    position: absolute;      /* flotando sobre el li */
+    left: 100%;              /* a la derecha del li */
+    top: 0;
+    margin: 0;
+    padding: 8px 12px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    min-width: 250px;
+    display: none;           /* oculto por defecto */
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-size: 14px;
+}
+
+/* Mostrar sinopsis al pasar el mouse */
+#resultadoBusqueda li:hover p {
+    display: block;
+}
